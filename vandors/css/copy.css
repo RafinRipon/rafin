@@ -1,0 +1,184 @@
+background: linear-gradient(to right, #12c2e9, #c471ed, #f64f59);
+
+/* ====================== [ Start Typography  ] ====================== */
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    outline: none;
+    list-style: none;
+  }
+  
+  html {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+  }
+  
+  body {
+    color: #fff;
+    background: #111215;
+    line-height: 1.5;
+    font-weight: 400;
+    overflow-x: hidden !important;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  img {
+    width: 100%;
+    height: auto;
+  }
+  
+  span, a, a:hover {
+    display: inline-block;
+    color: inherit;
+  }
+  
+  h1 {
+    font-size: 55px;
+  }
+  
+  h2 {
+    font-size: 40px;
+  }
+  
+  h3 {
+    font-size: 35px;
+  }
+  
+  h4 {
+    font-size: 30px;
+  }
+  
+  h5 {
+    font-size: 25px;
+  }
+  
+  h6 {
+    font-size: 18px;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    line-height: 1.4;
+    font-weight: 500;
+  }
+  
+  p {
+    color: #a4a7b1;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 2;
+    margin: 0;
+  }
+  
+  a, span {
+    display: inline-block;
+  }
+  
+  a:hover, span:hover {
+    text-decoration: none;
+  }
+  
+  .container {
+    max-width: 1200px;
+  }
+
+  .about-media {
+    position: relative;
+    overflow: hidden;
+    vertical-align: bottom;
+    transition: color .3s ease-out;
+    z-index: 0;
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+
+
+  .about-media::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    transform: translateY(calc(100% - 0px));
+    width: 100%;
+    height: 100%;
+    background: #202020;
+    transition: transform .25s ease-out;
+}
+
+.about-media:hover::before {
+    transform: translateY(0);
+    transition: transform .25s ease-out;
+}
+
+.about-media .about-icon i{
+    color: #ff004c;
+    font-size: 55px;
+    -webkit-transition: .8s ease;
+    -o-transition: .8s ease;
+    transition: .8s ease;
+    margin-bottom: 8px;
+}
+
+
+.about-media:hover .about-icon i{
+    -webkit-transform: translateY(-20px);
+    -ms-transform: translateY(-20px);
+    transform: translateY(-20px);
+}
+
+
+
+.views-img img {
+  transform: scale(1);
+  transition: 0.5s ease;
+}
+
+.views-img img:hover {
+  transform: scale(1.2);
+}
+
+
+<div class="col-xl-4 grid-item cat-1 cat-3">
+<div class="portfolio-single mb-30">
+    <img src="assets/image/p6.jpg" alt="RAFIN">
+</div>
+</div>
+<div class="col-xl-4 grid-item cat-2 cat-3">
+<div class="portfolio-single mb-30">
+  <img src="assets/image/p8.jpg" alt="RAFIN">
+</div>
+</div>
+<div class="col-xl-4 grid-item cat-1 cat-4">
+<div class="portfolio-single mb-30">
+  <img src="assets/image/p7 (2).jpg" alt="RAFIN">
+</div>
+</div>
+<div class="col-xl-4 grid-item cat-2 cat-4">
+<div class="portfolio-single mb-30">
+<img src="assets/image/p5.jpg" alt="RAFIN">
+</div>
+</div>
+<div class="col-xl-4 grid-item cat-1 cat-2">
+<div class="portfolio-single mb-30">
+<img src="assets/image/p3.jpg" alt="RAFIN">
+</div>
+</div>
+<div class="col-xl-4 grid-item cat-1 cat-2">
+<div class="portfolio-single mb-30">
+<img src="assets/image/p3.jpg" alt="RAFIN">
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
