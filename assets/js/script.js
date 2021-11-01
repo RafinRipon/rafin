@@ -30,52 +30,76 @@ $('document').ready(function(){
         event.preventDefault();
       });
 
+      $('.slick-slider').slick({
+        centerMode: true,
+        // centerPadding: '40px',
+        slidesToShow: 3,
+        // slidesToScroll: 1,
+        dots: true,
+        autoplaySpeed: 2000,
+        autoplay: true,
+        prevArrow:'<i class="fas fa-angle-left left-arrow"></i>',
+        nextArrow:'<i class="fas fa-angle-right right-arrow"></i>',
+        responsive: [
+          {
+            breakpoint: 1200,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 1
+            }
+          },
+         
+          {
+            breakpoint: 600,
+            settings: "unslick"
+          },
 
+        ]
+      });
+
+
+      
+    $('#bar1').barfiller({
+      barColor: 'crimson',
+      duration: 3000,
+    });
+    $('#bar2').barfiller({
+      barColor: '#000',
+      duration: 3200,
+    });
+    $('#bar3').barfiller({
+      barColor: '#Ff1493',
+      duration: 3500,
+    });
+    $('#bar4').barfiller({
+      barColor: '#00ffff',
+      duration: 3000,
+    });
+    $('#bar5').barfiller({
+      barColor: '#39ff14',
+      duration: 3100,
+    });
+
+    $('.parter-logo').slick({
+      centerMode: true,
+      centerPadding: '40px',
+      slidesToShow: 4,
+      slidesToScroll: 1,
+      autoplaySpeed: 1000,
+      dots: false,
+      prevArrow: false,
+      nextArrow: false,
+      autoplay: true,
+    });
 
 });
 
-// //slick class
+const toTop = document.querySelector(".to-top");
+window.addEventListener("scroll", () => {
+  if (window.pageYOffset > 100) {
+    toTop.classList.add("active");
+  } else {
+    toTop.classList.remove("active");
+  }
 
-$('.slick-slider').slick({
-  centerMode: true,
-  centerPadding: '60px',
-  slidesToShow: 3,
-  responsive: [
-    {
-      breakpoint: 768,
-      settings: {
-        arrows: false,
-        centerMode: true,
-        centerPadding: '40px',
-        slidesToShow: 3
-      }
-    },
-    {
-      breakpoint: 480,
-      settings: {
-        arrows: false,
-        centerMode: true,
-        centerPadding: '40px',
-        slidesToShow: 1
-      }
-    }
-  ]
-});
-
-
-// //owl-carousel class
-//      $('.news-active').owlCarousel({
-//       loop:true,
-//       nav:true,
-//       responsive:{
-//           0:{
-//               items:1
-//           },
-//           600:{
-//               items:3
-//           },
-//           1000:{
-//               items:5
-//           }
-//       }
-//   });
+})
